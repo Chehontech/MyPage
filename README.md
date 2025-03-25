@@ -1,14 +1,24 @@
-# React + Vite
+# This is my education project (# React + Vite + Tailwindcss)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## How to get started:
 
-Currently, two official plugins are available:
+- Clone the repository git clone https://github.com/WillTheDeveloper/RectDocsJS.git.
+- Run npm install.
+- Run npm run dev.
+- Enjoy!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+# Personal Website
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# MyPage
-# MyPage
+This project is a personal website, serving as a digital resume and portfolio to showcase my skills and experience. As a testing professional with a passion for learning web development, I built this site using React to gain practical experience in front-end development. The website is styled with Tailwind CSS, providing a utility-first approach for rapid styling, and enhanced with DaisyUI, which offers a collection of pre-built, customizable components. Vite was chosen as the build tool for its speed and efficiency in development.
+
+## Technologies Used
+
+* React: A JavaScript library for building user interfaces.
+* Tailwind CSS: A utility-first CSS framework for rapid UI development.
+* DaisyUI: A component library for Tailwind CSS.
+* Vite: A next-generation frontend tooling that provides an extremely fast development experience.
+
+## Purpose
+
+This project is a hands-on learning experience, demonstrating my commitment to expanding my technical skillset beyond testing and into the realm of web development. You can expect to find information about my background, skills, projects, and ways to contact me on this site.
