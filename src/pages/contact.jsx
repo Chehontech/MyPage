@@ -8,7 +8,7 @@ const Contact = () => {
           <div class="text-center lg:text-left">
             <h1 class="text-5xl font-bold">Связаться со мной</h1>
             <p class="py-6">
-              Отправьте мне свою, и я напишу вам.
+              Оставьте свой email, и я напишу вам.
             </p>
           </div>
           <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">

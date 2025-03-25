@@ -12,20 +12,20 @@ const Main = () => {
             <p class="py-6">
               Это моя визитка с использованиям React, Tailwindcss и Daisyui
             </p>
-            <div class="animate-bounce flex justify-center pt-10">
+            <a href='#next' class="animate-bounce flex justify-center pt-10">
               {icons.ArrowDown()}
-            </div>
+            </a>
           </div>
         </div>
       </div>
 
-      <div class="flex flex-row justify-between p-8">
+      <div class="flex flex-row justify-between p-8" id="next">
         <CardHome
         title = "Про меня"
         link = "/about"
         />
         <CardHome 
-        title = "Конатакты"
+        title = "Контакты"
         link = "/contact"
         />
       </div>
