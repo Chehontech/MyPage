@@ -1,28 +1,29 @@
 import React from 'react';
 
-const contact = () => {
+const Contact = () => {
   return (
-    <main className="main">
-      <section id="home" className="section">
-        <h1>Добро пожаловать на мой сайт-визитку!</h1>
-        <p>Здесь вы найдете информацию обо мне </p>
-      </section>
-
-      <section id="about" className="section">
-        <h2>Обо мне</h2>
-        <p>Привет! Меня зовут Антон, и я QA инженер.</p>
-      </section>
-
-      <section id="contact" className="section">
-        <h2>Контакты</h2>
-        <p>Свяжитесь со мной:</p>
-        <ul>
-          <li>Email: antonhunter39@gmail.com</li>
-          <li>Телефон: +38 (063) 61-127-47</li>
-        </ul>
-      </section>
-    </main>
+    <div class="contact">
+      <div class="hero bg-base-200 min-h-screen">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+          <div class="text-center lg:text-left">
+            <h1 class="text-5xl font-bold">Связаться со мной</h1>
+            <p class="py-6">
+              Отправьте мне свою, и я напишу вам.
+            </p>
+          </div>
+          <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+            <div class="card-body">
+              <fieldset class="fieldset">
+                <label class="fieldset-label">Email</label>
+                <input type="email" class="input" placeholder="Email" />
+                <button class="btn btn-neutral mt-4">Login</button>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 
-export default contact;
+export default Contact;
