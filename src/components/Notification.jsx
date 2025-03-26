@@ -14,7 +14,7 @@ function Notification() {
       {showNotification && (
         <div className="toast toast-end">
           <div className="alert alert-info">
-            <span>Не забудь оставить свою почту</span>
+            <span>Make sure to drop your email!</span>
             <button className="btn btn-sm btn-circle btn-ghost" onClick={() => setShowNotification(false)}>X</button>
           </div>
         </div>

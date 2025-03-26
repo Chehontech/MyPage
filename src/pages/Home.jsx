@@ -8,7 +8,7 @@ const Main = () => {
       <div class="hero bg-base-200 lg:h-120 h-svh">
         <div class="hero-content text-center">
           <div class="max-w-md">
-            <h1 class="text-5xl font-bold">Hello</h1>
+            <h1 class="text-5xl font-bold">Hello!</h1>
             <p class="py-6">
             A personal project cawebsite developed using: React, Tailwind CSS, and DaisyUI.
             </p>
@@ -21,11 +21,11 @@ const Main = () => {
 
       <div class="flex flex-row justify-between p-8" id="next">
         <CardHome
-        title = "Про меня"
+        title = "About me"
         link = "/about"
         />
         <CardHome 
-        title = "Контакты"
+        title = "Contact"
         link = "/contact"
         />
       </div>
