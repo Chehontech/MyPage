@@ -2,7 +2,7 @@
 
 ## How to get started:
 
-- Clone the repository `git clone https://github.com/WillTheDeveloper/RectDocsJS.git`.
+- Clone the repository `git clone https://github.com/WillTheDeveloper/RectDocsJS.git`git.
 - Run `npm install`.
 - Run `npm run dev`.
 - Enjoy!

@@ -6,9 +6,9 @@ const Contact = () => {
       <div class="hero bg-base-200 min-h-screen">
         <div class="hero-content flex-col lg:flex-row-reverse">
           <div class="text-center lg:text-left">
-            <h1 class="text-5xl font-bold">Связаться со мной</h1>
+            <h1 class="text-5xl font-bold">Contact Me</h1>
             <p class="py-6">
-              Оставьте свой email, и я напишу вам.
+            Drop your email below, and I’ll reach out!
             </p>
           </div>
           <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">

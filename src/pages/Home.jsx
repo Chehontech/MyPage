@@ -8,9 +8,9 @@ const Main = () => {
       <div class="hero bg-base-200 lg:h-120 h-svh">
         <div class="hero-content text-center">
           <div class="max-w-md">
-            <h1 class="text-5xl font-bold">Привет</h1>
+            <h1 class="text-5xl font-bold">Hello</h1>
             <p class="py-6">
-              Это моя визитка с использованиям React, Tailwindcss и Daisyui
+            A personal project cawebsite developed using: React, Tailwind CSS, and DaisyUI.
             </p>
             <a href='#next' class="animate-bounce flex justify-center pt-10">
               {icons.ArrowDown()}
@@ -32,18 +32,18 @@ const Main = () => {
 
       <div class="flex flex-row p-4 bg-base-200">
         <div class="lg:basis-2/3 p-4">
-          <h2 class="text-2xl mb-4">Привет! Меня зовут Антон</h2>
+          <h2 class="text-2xl mb-4">Hi, I'm Anton, a Junior QA Engineer and JavaScript developer.</h2>
           <p class="text-sm opacity-65">
-            Будучи человеком, работающим в технической сфере, мне всегда интересно анализировать и изучать современные технологические подходы. Я считаю важным постоянно развиваться и узнавать о новых возможностях, которые предоставляет мир технологий. К тому же, мне действительно нравится разбираться в том, как устроены и работают различные технические решения.
+          As someone working in the tech industry, I'm always interested in analyzing and studying modern technological approaches. I believe it's important to constantly develop and learn about the new opportunities that the world of technology provides. Moreover, I genuinely enjoy understanding how different technical solutions are structured and work, and I always strive for a deeper understanding. For me, it's crucial not just to follow trends, but to understand the essence of processes and the principles behind how technologies work.
           </p>
         </div>
         <div class="lg:basis-1/3 p-4">
-          <h2 class="text-2xl mb-4">Связаться со мной</h2>
+          <h2 class="text-2xl mb-4">Contact me</h2>
           <ul class="list bg-base-100 rounded-box shadow-md">
             
             <li class="list-row">
               <div>
-                <div>Почта</div>
+                <div>email</div>
                 <div class="text-xs uppercase font-semibold opacity-60">
                   <a href='mailto:antonhunter39@gmail.com'> antonhunter39@gmail.com </a>
                 </div>
@@ -52,7 +52,7 @@ const Main = () => {
             
             <li class="list-row">
               <div>
-                <div>Телефон</div>
+                <div>phone number</div>
                 <div class="text-xs uppercase font-semibold opacity-60">
                    <a href='tell:+380636112747'>+38 (063) 61-127-47</a>
                 </div>
@@ -72,7 +72,7 @@ const Main = () => {
             </label>
             <div class="validator-hint hidden">Enter valid email address</div>
           </div>
-          <button class="btn bg-base-200 join-item">Подписаться</button>
+          <button class="btn bg-base-200 join-item">Subscribe</button>
           </div>
       </div>
     </div>
