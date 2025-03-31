@@ -23,7 +23,13 @@ const About = () => {
         </div>
       </div>
       <div class="myskills ero bg-base-200 h-screen py-20h lg:px-20">
-        <h1 class="text-5xl font-bold">My Skills</h1>
+        <h1 class="text-5xl font-bold ">My Skills</h1>
+        <form class="filter">
+          <input class="btn btn-square" type="reset" value="×"/>
+          <input class="btn" type="radio" name="frameworks" aria-label="Svelte"/>
+          <input class="btn" type="radio" name="frameworks" aria-label="Vue"/>
+          <input class="btn" type="radio" name="frameworks" aria-label="React"/>
+        </form>
           <div class="divider divider-primary">Quality Assurance engineer</div>
           <div class="divider divider-secondary">HTML</div>
           <div class="divider divider-success">CSS</div>
