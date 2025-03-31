@@ -4,7 +4,7 @@ import Image from '../components/image';
 const About = () => {
   return (
     <div class="about">
-      <div class="hero bg-base-200 h-screen py-20 lg:px-20">
+      <div class="ero bg-base-200 h-screen py-20h lg:px-20">
         <div class="hero-content flex flex-col">
             <h1 class="text-5xl font-bold">Hello, I'm Anton!</h1>
             <article>
@@ -22,7 +22,14 @@ const About = () => {
             </article>
         </div>
       </div>
-    </div>
+      <div class="myskills ero bg-base-200 h-screen py-20h lg:px-20">
+        <h1 class="text-5xl font-bold">My Skills</h1>
+          <div class="divider divider-primary">Quality Assurance engineer</div>
+          <div class="divider divider-secondary">HTML</div>
+          <div class="divider divider-success">CSS</div>
+          <div class="divider divider-warning">JS Developer</div>
+        </div>
+      </div>
   );
 };
 
