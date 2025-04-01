@@ -23,7 +23,7 @@ const About = () => {
     <div class="about bg-base-200 h-screen">
       <div class="ero  py-20h lg:px-20">
         <div class="hero-content flex flex-col">
-            <h1 class="text-5xl font-bold">Hello, I'm Anton!</h1>
+            <h1 class="text-5xl text-center font-bold">Hello, I'm Anton!</h1>
             <article>
              <Image 
              src= "myphoto.jpg"
@@ -39,16 +39,16 @@ const About = () => {
             </article>
         </div>
         <div class="myskills py-20h lg:px-20">
-        <h1 class="text-5xl font-bold ">My Skills</h1>
+        <h2 className="text-center text-6xl">My Skills</h2>
         <form className="filter flex gap-2 mb-4" onReset={handleReset}>
           <input className="btn btn-square" type="reset" value="×" />
           <input
             className="btn"
             type="radio"
             name="frameworks"
-            value="Qa"
+            value="QA"
             onChange={handleFilterChange}
-            aria-label="Qa"
+            aria-label="QA"
           />
           <input
             className="btn"
@@ -75,7 +75,7 @@ const About = () => {
             aria-label="JS"
           />
         </form>
-        <div class="skils-list">
+        <div class="skills-list">
           {items.map((item, index) => (
           <div
             key={index}
