@@ -1,10 +1,27 @@
-import React from 'react';
-import Image from '../components/image';
+import React, { useState } from 'react';
+import Image from '../components/Image';
 
 const About = () => {
+  const [selectedFilter, setSelectedFilter] = useState(null);
+
+  const handleFilterChange = (event) => {
+    setSelectedFilter(event.target.value);
+  };
+
+  const handleReset = () => {
+    setSelectedFilter(null);
+  };
+
+  const items = [
+    { filter: 'QA', text: 'Quality Assurance engineer', className: 'divider-primary' },
+    { filter: 'HTML', text: 'HTML', className: 'divider-secondary' },
+    { filter: 'CSS', text: 'CSS', className: 'divider-success' },
+    { filter: 'JS', text: 'JS Developer', className: 'divider-warning' },
+  ];
+
   return (
-    <div class="about">
-      <div class="ero bg-base-200 h-screen py-20h lg:px-20">
+    <div class="about bg-base-200 h-screen">
+      <div class="ero  py-20h lg:px-20">
         <div class="hero-content flex flex-col">
             <h1 class="text-5xl font-bold">Hello, I'm Anton!</h1>
             <article>
@@ -21,21 +38,59 @@ const About = () => {
               </p>
             </article>
         </div>
-      </div>
-      <div class="myskills ero bg-base-200 h-screen py-20h lg:px-20">
+        <div class="myskills py-20h lg:px-20">
         <h1 class="text-5xl font-bold ">My Skills</h1>
-        <form class="filter">
-          <input class="btn btn-square" type="reset" value="×"/>
-          <input class="btn" type="radio" name="frameworks" aria-label="Svelte"/>
-          <input class="btn" type="radio" name="frameworks" aria-label="Vue"/>
-          <input class="btn" type="radio" name="frameworks" aria-label="React"/>
+        <form className="filter flex gap-2 mb-4" onReset={handleReset}>
+          <input className="btn btn-square" type="reset" value="×" />
+          <input
+            className="btn"
+            type="radio"
+            name="frameworks"
+            value="Qa"
+            onChange={handleFilterChange}
+            aria-label="Qa"
+          />
+          <input
+            className="btn"
+            type="radio"
+            name="frameworks"
+            value="HTML"
+            onChange={handleFilterChange}
+            aria-label="HTML"
+          />
+          <input
+            className="btn"
+            type="radio"
+            name="frameworks"
+            value="CSS"
+            onChange={handleFilterChange}
+            aria-label="CSS"
+          />
+          <input
+            className="btn"
+            type="radio"
+            name="frameworks"
+            value="JS"
+            onChange={handleFilterChange}
+            aria-label="JS"
+          />
         </form>
-          <div class="divider divider-primary">Quality Assurance engineer</div>
-          <div class="divider divider-secondary">HTML</div>
-          <div class="divider divider-success">CSS</div>
-          <div class="divider divider-warning">JS Developer</div>
+        <div class="skils-list">
+          {items.map((item, index) => (
+          <div
+            key={index}
+            className={`divider ${item.className} ${
+              selectedFilter && selectedFilter !== item.filter ? 'hidden' : ''
+            }`}
+          >
+            {item.text}
+          </div>
+        ))}
+        </div>
         </div>
       </div>
+    </div>  
+      
   );
 };
 
