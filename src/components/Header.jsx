@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { icons } from './Icon';
 import ThemeSwitch from './ThemeSwitch';
-import Blog from "./Blog"
 
 const Header = () => {
   return (

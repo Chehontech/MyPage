@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const PostList = () => {
+const Blog = () => {
   const [posts, setPosts] = useState([]);
   const [error, setError] = useState(null);
   const [isLoading, setLoading] = useState(true);
@@ -13,6 +13,7 @@ const PostList = () => {
           throw new Error('Network response was not ok');
         }
         const data = await response.json();
+        console.log(data)
         setPosts(data);
       } catch (error) {
         setError(error.message);
@@ -26,12 +27,12 @@ const PostList = () => {
 
   return (
     isLoading ? (
-      <p>Загрузка...</p>
+      <p>Download...</p>
     ) : error ? (
       <p>{error}</p>
     ) : (
       posts.length === 0 ? (
-        <p>Посты не найдены.</p>
+        <p>Posts not found.</p>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {posts.map(post => (
@@ -48,4 +49,4 @@ const PostList = () => {
   );
 };
 
-export default PostList;
+export default Blog;
