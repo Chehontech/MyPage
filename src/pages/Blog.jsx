@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Image from '../components/Image';
 
 const Blog = () => {
   const [posts, setPosts] = useState([]);
@@ -34,11 +35,17 @@ const Blog = () => {
       posts.length === 0 ? (
         <p>Posts not found.</p>
       ) : (
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-10">
           {posts.map(post => (
             <div key={post.id} className="card bg-base-100 shadow-xl">
-              <div className="card-body">
-                <h2 className="card-title">{post.title}</h2>
+              <figure className='contents!'>
+                  <Image 
+                    src= "blog.jpg"
+                    alt= "blog"
+                    className= ""/>
+              </figure>
+              <div className="card-body text-center">
+                <h2 className="card-title block">{post.title}</h2>
                 <p>{post.body}</p>
               </div>
             </div>
